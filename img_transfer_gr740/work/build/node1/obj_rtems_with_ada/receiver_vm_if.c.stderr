@@ -1,0 +1,8 @@
+[01m[K/home/taste/projects/img_transfer_gr740/work/receiver/C/wrappers/receiver_vm_if.c:[m[K In function '[01m[Kinit_receiver[m[K':
+[01m[K/home/taste/projects/img_transfer_gr740/work/receiver/C/wrappers/receiver_vm_if.c:25:19:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_startup[m[K' [[01;35m[K-Wnested-externs[m[K]
+       extern void [01;35m[Kreceiver_startup[m[K(void);
+                   [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer_gr740/work/receiver/C/wrappers/receiver_vm_if.c:[m[K In function '[01m[Kreceiver_image[m[K':
+[01m[K/home/taste/projects/img_transfer_gr740/work/receiver/C/wrappers/receiver_vm_if.c:50:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_PI_image[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kreceiver_PI_image[m[K
+                [01;35m[K^~~~~~~~~~~~~~~~~[m[K

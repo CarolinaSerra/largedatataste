@@ -1,0 +1,15 @@
+all: gr740_partition
+
+
+
+gr740_partition :
+	echo "Building HW functions for partition gr740_partition"
+
+
+
+
+
+
+.PHONY: all gr740_partition
+
+

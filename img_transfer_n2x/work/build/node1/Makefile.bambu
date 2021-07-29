@@ -1,0 +1,15 @@
+all: n2x_partition
+
+
+
+n2x_partition :
+	echo "Building HW functions for partition n2x_partition"
+
+
+
+
+
+
+.PHONY: all n2x_partition
+
+

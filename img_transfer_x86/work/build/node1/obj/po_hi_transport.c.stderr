@@ -1,0 +1,4 @@
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function ‘[01m[K__po_hi_transport_send[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:100:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kndest[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   __po_hi_uint8_t [01;35m[Kndest[m[K;
+                   [01;35m[K^~~~~[m[K

@@ -1,0 +1,11 @@
+--  Node name          : n2x_partition
+--  Execution platform : PLATFORM_LEON_RTEMS_POSIX n2x_rtems51_posix PLATFORM_LEON_RTEMS_POSIX ocarina_processors_leon::n2x.rtems51_posix ocarina_processors_leon n2x rtems51_posix
+
+aggregate project N2x_Partition_Zynq_Bambu is
+     for Project_Files use (
+);
+
+end N2x_Partition_Zynq_Bambu;
+
+
+

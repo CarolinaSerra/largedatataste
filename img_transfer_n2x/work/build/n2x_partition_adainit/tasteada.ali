@@ -1,0 +1,12 @@
+V "GNAT Lib v7"
+P FX
+
+RN
+
+U adainit%s		tasteada.ads		cc9e0cb4 NE OO PK IL
+
+D tasteada.ads		20210729082055 cc9e0cb4 adainit%s
+D system.ads		20190514051538 2a86eebc system%s
+X 1 tasteada.ads
+1K9*adainit 1l24 1e31
+

@@ -1,0 +1,3 @@
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_driver_drvmgr_common.c:19:6:[m[K [01;35m[Kwarning: [m[Kno previous prototype for ‘[01m[K__po_hi_c_driver_drvmgr_init[m[K’ [[01;35m[K-Wmissing-prototypes[m[K]
+ void [01;35m[K__po_hi_c_driver_drvmgr_init[m[K (void) {
+      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

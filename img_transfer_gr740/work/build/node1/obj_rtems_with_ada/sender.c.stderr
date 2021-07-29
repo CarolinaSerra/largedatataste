@@ -1,0 +1,13 @@
+In file included from [01m[K/home/taste/projects/img_transfer_gr740/work/sender/C/src/sender.c:13:0[m[K:
+[01m[K/home/taste/projects/img_transfer_gr740/work/sender/C/src/raw.h:2:27:[m[K [01;35m[Kwarning: [m[Kmissing braces around initializer [[01;35m[K-Wmissing-braces[m[K]
+ asn1SccRawData raw_data = [01;35m[K{[m[K
+                           [01;35m[K^[m[K
+     0x3c23 ,  0x3ba8 ,  0x3b11 ,  0x3aa8 ,  0x3a31 ,  0x39aa ,  0x3942 ,  0x3911 ,  0x3901 ,
+     [32m[K{[m[K
+[01m[K/home/taste/projects/img_transfer_gr740/work/sender/C/src/raw.h:466036:74:[m[K
+     0xb7cb ,  0xb742 ,  0xb6cb ,  0xb653 ,  0xb5db ,  0xb577 ,  0xb510   };
+                                                                          [32m[K}[m[K
+[01m[K/home/taste/projects/img_transfer_gr740/work/sender/C/src/sender.c:[m[K In function '[01m[Ksender_startup[m[K':
+[01m[K/home/taste/projects/img_transfer_gr740/work/sender/C/src/sender.c:20:4:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function '[01m[Kputs[m[K' [[01;35m[K-Wimplicit-function-declaration[m[K]
+    [01;35m[Kputs[m[K ("[sender] Startup");
+    [01;35m[K^~~~[m[K

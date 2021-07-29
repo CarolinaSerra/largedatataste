@@ -1,0 +1,15 @@
+all: x86_partition
+
+
+
+x86_partition :
+	echo "Building HW functions for partition x86_partition"
+
+
+
+
+
+
+.PHONY: all x86_partition
+
+

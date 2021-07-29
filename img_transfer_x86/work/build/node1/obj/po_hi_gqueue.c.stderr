@@ -1,0 +1,58 @@
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function ‘[01m[K__po_hi_gqueue_init[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:415:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_init_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function ‘[01m[K__po_hi_gqueue_store_in[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:568:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-variable[m[K]
+       int [01;35m[Kres[m[K =
+           [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:651:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krel[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Krel[m[K = __po_hi_sem_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:541:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function ‘[01m[K__po_hi_gqueue_wait_for_specific_incoming_events[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:767:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres_sem[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kres_sem[m[K = __po_hi_sem_wait_gqueue(__po_hi_gqueues_semaphores, id);
+         [01;35m[K^~~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:786:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:743:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function ‘[01m[K__po_hi_gqueue_wait_for_incoming_event[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:817:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres_sem[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kres_sem[m[K = __po_hi_sem_wait_gqueue(__po_hi_gqueues_semaphores, id);
+         [01;35m[K^~~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:840:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:809:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function ‘[01m[K__po_hi_gqueue_get_value[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:901:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krel[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Krel[m[K =
+         [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:917:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres_sem[m[K’ [[01;35m[K-Wunused-variable[m[K]
+       int [01;35m[Kres_sem[m[K = __po_hi_sem_wait_gqueue(__po_hi_gqueues_semaphores, id);
+           [01;35m[K^~~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:956:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:887:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function ‘[01m[K__po_hi_gqueue_next_value[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:1051:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kres[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:998:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function ‘[01m[K__po_hi_gqueue_compute_index_transition_to_execute[m[K’:
+[01m[K/home/taste/projects/img_transfer/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:733:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdispatch_condition[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+   return [01;35m[Kdispatch_condition[m[K;
+          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K

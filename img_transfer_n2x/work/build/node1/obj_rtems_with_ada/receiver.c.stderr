@@ -1,0 +1,7 @@
+[01m[K/home/taste/projects/img_transfer_n2x/work/receiver/C/src/receiver.c:[m[K In function '[01m[Kreceiver_PI_image[m[K':
+[01m[K/home/taste/projects/img_transfer_n2x/work/receiver/C/src/receiver.c:26:4:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function '[01m[Kputs[m[K' [[01;35m[K-Wimplicit-function-declaration[m[K]
+    [01;35m[Kputs[m[K("[Receiver] Got image!");
+    [01;35m[K^~~~[m[K
+[01m[K/home/taste/projects/img_transfer_n2x/work/receiver/C/src/receiver.c:23:30:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_img_data[m[K' [[01;35m[K-Wunused-parameter[m[K]
+       (const asn1SccRawData *[01;35m[KIN_img_data[m[K)
+                              [01;35m[K^~~~~~~~~~~[m[K

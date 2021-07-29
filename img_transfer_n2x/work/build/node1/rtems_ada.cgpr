@@ -1,0 +1,93 @@
+--  Node name          : n2x_partition
+--  Execution platform : PLATFORM_LEON_RTEMS_POSIX
+-- Generic gprbuild configuration file for rtems5 with Ada support for leon3
+configuration project RTEMS_WITH_ADA is
+   package Compiler is
+      for Driver ("C") use "sparc-rtems5-gcc";
+      for Driver ("Ada") use "sparc-rtems5-gcc";
+      for Driver ("C++") use "sparc-rtems5-g++";
+
+      for Leading_Required_Switches ("C") use ("-c");
+      for Leading_Required_Switches ("C++") use ("-c");
+
+      for Required_Switches("Ada") use
+         ("-c",
+          "-x",
+          "ada",
+          "-gnatA");
+
+      Common_C_Switches :=
+         ("--pipe",
+          "-fdata-sections",
+          "-ffunction-sections",
+          "-fdiagnostics-color=always",
+          "-mcpu=cypress",
+          "-DLEON3",
+          "-DGAISLER",
+          "-DNDEBUG",
+          "-DBSP_leon3",
+          "-DCORES=1",
+          "-DTARGET=leon.rtems_posix",
+          "-DRTEMS_POSIX",
+          "-DRTEMS412",
+          "-DGRLEON3",
+          "-DLEON_RTEMS",
+          "-B/opt/rtems-5.1-2019.07.25/sparc-rtems5/leon3/lib",
+          "-specs=bsp_specs",
+          "-qrtems");
+
+      for Required_Switches("C") use Common_C_Switches;
+      for Required_Switches("C++") use Common_C_Switches;
+
+      for Object_File_Suffix ("C") use ".o";
+      for Object_File_Suffix ("C++") use ".o";
+      for Object_File_Suffix ("Ada") use ".o";
+      for Dependency_Switches ("C") use ("-Wp,-MD,");
+      for Dependency_Switches ("C++") use ("-Wp,-MD,");
+      for Dependency_Switches ("Ada") use ("-MMD","-MF","");
+      for Include_Switches ("C") use ("-I");
+      for Include_Switches ("C++") use ("-I");
+      for Include_Switches ("Ada") use ("-I");
+      for Include_Path ("Ada") use "ADA_INCLUDE_PATH";
+      for Include_Path_File ("Ada") use "ADA_PRJ_INCLUDE_FILE";
+      for Mapping_File_Switches ("Ada") use ("-gnatem=");
+   end Compiler;
+   package Naming is
+      for Spec_Suffix ("C") use ".h";
+      for Body_Suffix ("C") use ".c";
+      for Spec_Suffix ("Ada") use ".ads";
+      for Body_Suffix ("Ada") use ".adb";
+       for Body_Suffix ("C++") use ".cc";
+      for Dot_Replacement use "-";
+   end Naming;
+   for Archive_Builder use ("ar" , "cr");
+
+   package Linker is
+      for Driver use "sparc-rtems5-gcc";
+      Common_C_Linker_Switches :=
+           ("--pipe",
+            "-g",
+            "-Wl,--gc-sections",
+            "-B/opt/rtems-5.1-2019.07.25/sparc-rtems5/leon3/lib",
+            "-specs=bsp_specs",
+            "-qrtems",
+            "-lm",
+            "-L/opt/rtems-5.1-2019.07.25/lib/gcc/sparc-rtems5/7.4.1/leon3/adalib",
+            "-lgnat",
+            "-lgnarl",
+            "-mcpu=cypress",
+            "-lstdc++");
+
+       for Default_Switches ("C") use Common_C_Linker_Switches;
+       for Default_Switches ("C++") use Common_C_Linker_Switches;
+       for Default_Switches ("Ada") use
+           ("--pipe",
+            "-g",
+            "-B/opt/rtems-5.1-2019.07.25/sparc-rtems5/leon3/lib",
+            "-specs=bsp_specs",
+            "-qrtems",
+            "-lm",
+            "-lgnat",
+            "-mcpu=cypress");
+   end Linker;
+end RTEMS_WITH_ADA;

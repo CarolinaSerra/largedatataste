@@ -1,0 +1,17 @@
+#  node1 gr740_rtems51_posix  PLATFORM_LEON_RTEMS_POSIX ocarina_processors_leon::gr740.rtems51_posix
+all:	release
+
+simulate:
+	# Configure gprbuild to use GCC toolchain even if LLVM is installed
+	gprconfig --batch --config=Ada,,default,,GNAT --config=C,,default,,GCC --config=C++,,default,,G++ || :
+	gprbuild -p -P gr740_partition_simulator.gpr -XCFG="Debug" -cargs:C -DSTATIC=""
+
+debug:
+	gprbuild -p -v --config=rtems_ada.cgpr -P gr740_partition_rtems_ada.gpr -XCFG="Debug" -cargs:C -DSTATIC=""
+release:
+	gprbuild -p --config=rtems_ada.cgpr -P gr740_partition_rtems_ada.gpr -XCFG="Release" -cargs:C -DSTATIC=""
+
+
+clean:
+	rm -rf gr740_partition_obj
+

@@ -1,0 +1,12 @@
+--  Node name          : n2x_partition
+--  Execution platform : PLATFORM_LEON_RTEMS_POSIX n2x_rtems51_posix PLATFORM_LEON_RTEMS_POSIX ocarina_processors_leon::n2x.rtems51_posix ocarina_processors_leon n2x rtems51_posix
+
+
+aggregate project N2x_Partition_Zynq is
+for Project_Files use (
+"n2x_partition_zynq_rtems.gpr"
+);
+
+
+end N2x_Partition_Zynq;
+

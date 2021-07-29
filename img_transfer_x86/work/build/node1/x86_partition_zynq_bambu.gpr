@@ -1,0 +1,11 @@
+--  Node name          : x86_partition
+--  Execution platform : PLATFORM_NATIVE x86_linux PLATFORM_NATIVE ocarina_processors_x86::x86.linux ocarina_processors_x86 x86 linux
+
+aggregate project X86_Partition_Zynq_Bambu is
+     for Project_Files use (
+);
+
+end X86_Partition_Zynq_Bambu;
+
+
+
