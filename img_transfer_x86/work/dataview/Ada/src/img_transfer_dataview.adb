@@ -35,7 +35,7 @@ is
     ret : adaasn1rtl.ASN1_RESULT := adaasn1rtl.ASN1_RESULT'(Success => true, ErrorCode => 0);
     pragma Warnings (On, "initialization of ret has no effect");        
 begin
-    ret.Success := (val <= 65540);
+    ret.Success := (val <= 255);
     ret.ErrorCode := (if ret.Success then 0 else ERR_MYINTEGER);
     return ret;
 end asn1SccMyInteger_IsConstraintValid;
@@ -44,19 +44,9 @@ end asn1SccMyInteger_IsConstraintValid;
 
 function asn1SccRawData_Equal (val1, val2 :  asn1SccRawData) return Boolean
 is
-    pragma Warnings (Off, "initialization of ret has no effect");
-    ret : Boolean := True;
-    pragma Warnings (On, "initialization of ret has no effect");
-    i1:Integer;
 
 begin
-    i1 := val1.Data'First;
-    while ret and i1 <= 4194304 loop
-        --  pragma Loop_Invariant (i1 >= val1.Data'First and i1 >= val2.Data'First);
-        ret := (val1.Data(i1) = val2.Data(i1));
-        i1 := i1+1;
-    end loop;
-	return ret;
+	return val1.Data = val2.Data;
 
 end asn1SccRawData_Equal;
 
@@ -66,11 +56,11 @@ is
     i1:Integer;
 begin
     i1 := 1;
-    while i1<= 4194304 loop
+    while i1<= 12582912 loop
         --  commented because it casues this warning    
         --  warning: condition can only be False if invalid values present
-        pragma Loop_Invariant (i1 >=1 and i1<=4194304);
-        val.Data(i1) := asn1SccMyInteger_Init;
+        pragma Loop_Invariant (i1 >=1 and i1<=12582912);
+        val.Data(i1) := adaasn1rtl.Asn1Byte(0);
         i1 := i1 + 1;
     end loop;
 
@@ -81,17 +71,12 @@ end asn1SccRawData_Init;
 
 function asn1SccRawData_IsConstraintValid(val : asn1SccRawData) return adaasn1rtl.ASN1_RESULT
 is
+    pragma Unreferenced (val);
     pragma Warnings (Off, "initialization of ret has no effect");        
     ret : adaasn1rtl.ASN1_RESULT := adaasn1rtl.ASN1_RESULT'(Success => true, ErrorCode => 0);
     pragma Warnings (On, "initialization of ret has no effect");        
-    i1:Integer;
 begin
-    i1 := val.Data'First;
-    while ret.Success and i1 <= 4194304 loop
-        pragma Loop_Invariant (i1 >= val.Data'First and i1 <= 4194304);
-        ret := asn1SccMyInteger_IsConstraintValid(val.Data(i1));
-        i1 := i1+1;
-    end loop;
+    ret := adaasn1rtl.ASN1_RESULT'(Success => true, ErrorCode => 0);
     return ret;
 end asn1SccRawData_IsConstraintValid;
 

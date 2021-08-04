@@ -1,0 +1,7 @@
+In file included from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/gr740_partition/main.c:2:0[m[K:
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/include/po_hi_task.h:62:27:[m[K [01;35m[Kwarning: [m[Kno previous prototype for '[01m[KPOSIX_Init[m[K' [[01;35m[K-Wmissing-prototypes[m[K]
+ #define __PO_HI_MAIN_NAME [01;35m[KP[m[KOSIX_Init
+                           [01;35m[K^[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/gr740_partition/main.c:22:19:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[K__PO_HI_MAIN_NAME[m[K'
+ __PO_HI_MAIN_TYPE [01;36m[K__PO_HI_MAIN_NAME[m[K (void)
+                   [01;36m[K^~~~~~~~~~~~~~~~~[m[K

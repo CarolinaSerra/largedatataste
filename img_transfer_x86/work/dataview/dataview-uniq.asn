@@ -1,7 +1,7 @@
 IMG-TRANSFER-DATAVIEW DEFINITIONS ::=
 BEGIN
 
-   MyInteger ::= INTEGER (0 .. 65540)
+   MyInteger ::= INTEGER (0 .. 255)--65540)
 
 -- ASN.1 Type definitions must start with an uppercase
 -- Field names in records (SEQUENCE) must start with a lowercase
@@ -31,7 +31,7 @@ BEGIN
 --      b MySeq
 --  }
 --
-RawData     ::= SEQUENCE (SIZE (4194304)) OF MyInteger
+RawData     ::= OCTET STRING (SIZE (12582912))--SEQUENCE (SIZE (4194304)) OF MyInteger
 --
 --  MyOctStr    ::= OCTET STRING (SIZE (3))
 --

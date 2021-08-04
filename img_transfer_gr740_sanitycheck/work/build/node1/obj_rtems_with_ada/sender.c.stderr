@@ -1,0 +1,4 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/sender/C/src/sender.c:[m[K In function '[01m[Ksender_startup[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/sender/C/src/sender.c:20:4:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function '[01m[Kputs[m[K' [[01;35m[K-Wimplicit-function-declaration[m[K]
+    [01;35m[Kputs[m[K ("[sender] Startup");
+    [01;35m[K^~~~[m[K

@@ -43,19 +43,13 @@ void PrintASN1RawData(const char *paramName, const asn1SccRawData *pData)
     //printf("%s RawData ::= ", paramName);
     printf("%s ", paramName);
     {
-        int i1;
-        printf("{");
-        for(i1=0; i1<4194304; i1++) {
-            if (i1) 
-                printf(",");
-            #if WORD_SIZE==8
-            printf("%"PRId64, (*pData).arr[i1]);
-            #else
-            printf("%d", (*pData).arr[i1]);
-            #endif
-        }
-        printf("}");
+        int i;
+        printf("'");
+        for(i=0; i<12582912; i++)
+            printf("%02x", (*pData).arr[i]);
+        printf("'H");
     }
+
 #endif
 #ifdef __linux__
     pthread_mutex_unlock(&g_printing_mutex);

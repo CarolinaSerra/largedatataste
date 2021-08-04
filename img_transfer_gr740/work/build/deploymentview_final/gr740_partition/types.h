@@ -22,7 +22,7 @@ typedef struct
 
 typedef char dataview__stream_element_buffer;
 
-typedef dataview__stream_element_buffer dataview__rawdata_buffer_max_impl[33554432];
+typedef dataview__stream_element_buffer dataview__rawdata_buffer_max_impl[12583112];
 
 typedef __po_hi_uint32_t base_types__unsigned_32;
 

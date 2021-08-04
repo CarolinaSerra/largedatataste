@@ -1,0 +1,170 @@
+---------------------------------------------------
+-- AADL2.2
+-- TASTE type interfaceview
+-- 
+-- generated code: do not edit
+---------------------------------------------------
+
+PACKAGE interfaceview::IV::sender
+PUBLIC
+
+WITH interfaceview::IV::receiver;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_trigger
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_trigger;
+
+SUBPROGRAM IMPLEMENTATION PI_trigger.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_trigger.others;
+
+SUBPROGRAM RI_image
+FEATURES
+  img_data : IN PARAMETER DataView::RawData {
+    Taste::encoding => NATIVE;
+  };
+END RI_image;
+
+SUBPROGRAM IMPLEMENTATION RI_image.others
+END RI_image.others;
+
+SUBPROGRAM PI_testint
+FEATURES
+  int2 : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END PI_testint;
+
+SUBPROGRAM IMPLEMENTATION PI_testint.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_testint.others;
+
+SYSTEM sender
+FEATURES
+  PI_trigger : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_trigger.others {
+    Taste::coordinates => "93285 72716";
+    Taste::RCMoperationKind => cyclic;
+    Taste::RCMperiod => 200 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "trigger";
+  };
+  RI_image : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_image.others {
+    Taste::coordinates => "130817 78128";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "image";
+    Taste::labelInheritance => "true";
+  };
+  PI_testint : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_testint.others {
+    Taste::coordinates => "130817 90756";
+    Taste::RCMoperationKind => sporadic;
+    Taste::InterfaceName => "testint";
+  };
+PROPERTIES
+  Source_Language => (C);
+  Taste::Active_Interfaces => any;
+END sender;
+
+SYSTEM IMPLEMENTATION sender.others
+END sender.others;
+
+END interfaceview::IV::sender;
+
+PACKAGE interfaceview::IV::receiver
+PUBLIC
+
+WITH interfaceview::IV::sender;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_image
+FEATURES
+  img_data : IN PARAMETER DataView::RawData {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_image;
+
+SUBPROGRAM IMPLEMENTATION PI_image.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_image.others;
+
+SUBPROGRAM RI_testint
+FEATURES
+  int2 : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_testint;
+
+SUBPROGRAM IMPLEMENTATION RI_testint.others
+END RI_testint.others;
+
+SYSTEM receiver
+FEATURES
+  PI_image : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_image.others {
+    Taste::coordinates => "159687 79752";
+    Taste::RCMoperationKind => sporadic;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "image";
+  };
+  RI_testint : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_testint.others {
+    Taste::coordinates => "159687 88772";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "testint";
+    Taste::labelInheritance => "true";
+  };
+PROPERTIES
+  Source_Language => (C);
+  Taste::Active_Interfaces => any;
+END receiver;
+
+SYSTEM IMPLEMENTATION receiver.others
+END receiver.others;
+
+END interfaceview::IV::receiver;
+
+PACKAGE interfaceview::IV
+PUBLIC
+
+WITH interfaceview::IV::sender;
+WITH interfaceview::IV::receiver;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SYSTEM interfaceview
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+END interfaceview;
+
+SYSTEM IMPLEMENTATION interfaceview.others
+SUBCOMPONENTS
+  sender : SYSTEM interfaceview::IV::sender::sender.others {
+    Taste::coordinates => "89677 72716 130817 101406";
+  };
+  receiver : SYSTEM interfaceview::IV::receiver::receiver.others {
+    Taste::coordinates => "159687 72536 216344 101045";
+  };
+CONNECTIONS
+  sender_RI_image_receiver_PI_image : SUBPROGRAM ACCESS receiver.PI_image -> sender.RI_image {
+    Taste::coordinates => "130817 78128 145252 78128 145252 79752 159687 79752";
+  };
+  receiver_RI_testint_sender_PI_testint : SUBPROGRAM ACCESS sender.PI_testint -> receiver.RI_testint {
+    Taste::coordinates => "159687 88772 145252 88772 145252 90756 130817 90756";
+  };
+END interfaceview.others;
+
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+  Taste::coordinates => "0 0 297000 210000";
+  Taste::version => "2.4";
+END interfaceview::IV;
+

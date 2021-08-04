@@ -27,7 +27,7 @@ package IMG_TRANSFER_DATAVIEW with SPARK_Mode
 is
 
 
-subtype asn1SccMyInteger is adaasn1rtl.Asn1UInt range 0 .. 65540;
+subtype asn1SccMyInteger is adaasn1rtl.Asn1UInt range 0 .. 255;
 
 
 function asn1SccMyInteger_Equal(val1, val2 : asn1SccMyInteger) return Boolean;
@@ -36,11 +36,8 @@ function asn1SccMyInteger_Init return asn1SccMyInteger;
 
 ERR_MYINTEGER:constant Integer := 1; 
 function asn1SccMyInteger_IsConstraintValid(val : asn1SccMyInteger) return adaasn1rtl.ASN1_RESULT;
--- asn1SccRawData --------------------------------------------
-
-
-subtype asn1SccRawData_index is Integer range 1..4194304;
-type asn1SccRawData_array is array (asn1SccRawData_index) of asn1SccMyInteger;
+subtype asn1SccRawData_index is Integer range 1..12582912;
+subtype asn1SccRawData_array is adaasn1rtl.OctetBuffer(asn1SccRawData_index);
 type asn1SccRawData is  record
     Data  : asn1SccRawData_array;
 end record;
@@ -49,8 +46,7 @@ function asn1SccRawData_Equal(val1, val2 : asn1SccRawData) return Boolean;
 
 function asn1SccRawData_Init return asn1SccRawData;
 
-ERR_RAWDATA:constant Integer := 22; 
-ERR_RAWDATA_ELM_2:constant Integer := 15; 
+ERR_RAWDATA:constant Integer := 8; 
 function asn1SccRawData_IsConstraintValid(val : asn1SccRawData) return adaasn1rtl.ASN1_RESULT;
 pragma Warnings (Off, "there are no others");
  

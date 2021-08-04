@@ -1,0 +1,11 @@
+--  Node name          : gr740_partition
+--  Execution platform : PLATFORM_LEON_RTEMS_POSIX gr740_rtems51_posix PLATFORM_LEON_RTEMS_POSIX ocarina_processors_leon::gr740.rtems51_posix ocarina_processors_leon gr740 rtems51_posix
+
+aggregate project Gr740_Partition_Zynq_Bambu is
+     for Project_Files use (
+);
+
+end Gr740_Partition_Zynq_Bambu;
+
+
+

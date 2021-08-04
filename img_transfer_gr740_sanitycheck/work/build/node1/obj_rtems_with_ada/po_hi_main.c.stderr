@@ -1,0 +1,20 @@
+In file included from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/include/po_hi_common.h:131:0[m[K,
+                 from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_main.c:20[m[K:
+[01m[K/opt/rtems-5.1-2019.07.25/sparc-rtems5/gr740/lib/include/rtems/confdefs.h:195:4:[m[K [01;35m[Kwarning: [m[K#warning "CONFIGURE_SMP_APPLICATION is obsolete since RTEMS 5.1" [[01;35m[K-Wcpp[m[K]
+   #[01;35m[Kwarning[m[K "CONFIGURE_SMP_APPLICATION is obsolete since RTEMS 5.1"
+    [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/include/../src/config.c:58:0[m[K,
+                 from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/include/po_hi_common.h:140[m[K,
+                 from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_main.c:20[m[K:
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/include/../src/config_leon3_drvmgr.c:120:6:[m[K [01;35m[Kwarning: [m[Kno previous prototype for '[01m[Ksystem_init2[m[K' [[01;35m[K-Wmissing-prototypes[m[K]
+ void [01;35m[Ksystem_init2[m[K(void)
+      [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/include/po_hi_common.h:140:0[m[K,
+                 from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_main.c:20[m[K:
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/include/../src/config.c:104:6:[m[K [01;35m[Kwarning: [m[Kno previous prototype for '[01m[Ksystem_init[m[K' [[01;35m[K-Wmissing-prototypes[m[K]
+ void [01;35m[Ksystem_init[m[K(void)
+      [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_main.c:[m[K In function '[01m[K__po_hi_initialize[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_sanitycheck/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_main.c:478:15:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_main_initialize[m[K' [[01;35m[K-Wnested-externs[m[K]
+   extern void [01;35m[K__po_hi_main_initialize[m[K(
+               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K

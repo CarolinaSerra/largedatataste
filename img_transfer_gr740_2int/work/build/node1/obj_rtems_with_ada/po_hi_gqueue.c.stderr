@@ -1,0 +1,71 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[Kobjpool_request_t_create[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:212:44:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K%ld[m[K' expects argument of type '[01m[Klong int[m[K', but argument 2 has type '[01m[Kunsigned int[m[K' [[01;35m[K-Wformat=[m[K]
+   printf("\n\nsize to allocate: request: [01;35m[K%ld[m[K // item: %ld // num: %ld\n\n", sizeof(objpool_request_t), sizeof(objpool_item_t), num);
+                                          [01;35m[K~~^[m[K
+                                          [32m[K%d[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:212:57:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K%ld[m[K' expects argument of type '[01m[Klong int[m[K', but argument 3 has type '[01m[Kunsigned int[m[K' [[01;35m[K-Wformat=[m[K]
+   printf("\n\nsize to allocate: request: %ld // item: [01;35m[K%ld[m[K // num: %ld\n\n", sizeof(objpool_request_t), sizeof(objpool_item_t), num);
+                                                       [01;35m[K~~^[m[K
+                                                       [32m[K%d[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:212:69:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K%ld[m[K' expects argument of type '[01m[Klong int[m[K', but argument 4 has type '[01m[Ksize_t {aka const unsigned int}[m[K' [[01;35m[K-Wformat=[m[K]
+   printf("\n\nsize to allocate: request: %ld // item: %ld // num: [01;35m[K%ld[m[K\n\n", sizeof(objpool_request_t), sizeof(objpool_item_t), num);
+                                                                   [01;35m[K~~^[m[K
+                                                                   [32m[K%d[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[K__po_hi_gqueue_init[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:416:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_init_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[K__po_hi_gqueue_store_in[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:569:11:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres[m[K' [[01;35m[K-Wunused-variable[m[K]
+       int [01;35m[Kres[m[K =
+           [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:652:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Krel[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Krel[m[K = __po_hi_sem_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:542:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kresult[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[K__po_hi_gqueue_wait_for_specific_incoming_events[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:768:9:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres_sem[m[K' [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kres_sem[m[K = __po_hi_sem_wait_gqueue(__po_hi_gqueues_semaphores, id);
+         [01;35m[K^~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:787:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:744:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kresult[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[K__po_hi_gqueue_wait_for_incoming_event[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:818:9:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres_sem[m[K' [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kres_sem[m[K = __po_hi_sem_wait_gqueue(__po_hi_gqueues_semaphores, id);
+         [01;35m[K^~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:841:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:810:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kresult[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[K__po_hi_gqueue_get_value[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:902:9:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Krel[m[K' [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Krel[m[K =
+         [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:918:11:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres_sem[m[K' [[01;35m[K-Wunused-variable[m[K]
+       int [01;35m[Kres_sem[m[K = __po_hi_sem_wait_gqueue(__po_hi_gqueues_semaphores, id);
+           [01;35m[K^~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:957:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:888:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kresult[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[K__po_hi_gqueue_next_value[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:1052:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kres[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kres[m[K = __po_hi_sem_mutex_release_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:999:7:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kresult[m[K' [[01;35m[K-Wunused-variable[m[K]
+   int [01;35m[Kresult[m[K = __po_hi_sem_mutex_wait_gqueue(__po_hi_gqueues_semaphores, id);
+       [01;35m[K^~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:[m[K In function '[01m[K__po_hi_gqueue_compute_index_transition_to_execute[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_gqueue.c:734:10:[m[K [01;35m[Kwarning: [m[K'[01m[Kdispatch_condition[m[K' may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+   return [01;35m[Kdispatch_condition[m[K;
+          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K

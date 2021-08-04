@@ -1,0 +1,8 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/receiver/C/src/receiver.c:[m[K In function '[01m[Kreceiver_PI_image[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/receiver/C/src/receiver.c:33:26:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of '[01m[Kreceiver_RI_testint[m[K' makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+     receiver_RI_testint( [01;35m[Kresult[m[K );
+                          [01;35m[K^~~~~~[m[K
+In file included from [01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/receiver/C/src/receiver.c:12:0[m[K:
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/receiver/C/src/receiver.h:32:13:[m[K [01;36m[Knote: [m[Kexpected '[01m[Kconst asn1SccMyInteger * {aka const long long unsigned int *}[m[K' but argument is of type '[01m[Kasn1SccMyInteger {aka long long unsigned int}[m[K'
+ extern void [01;36m[Kreceiver_RI_testint[m[K( const asn1SccMyInteger * );
+             [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K

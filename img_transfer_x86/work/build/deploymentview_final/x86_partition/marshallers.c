@@ -32,7 +32,7 @@ void __po_hi_marshall_type_rawdata_buffer_max_impl
     __po_hi_uint32_t* offset)
 {
 
-  __po_hi_marshall_array (value, message, 33554432, offset);
+  __po_hi_marshall_array (value, message, 12583112, offset);
 }
 
 void __po_hi_unmarshall_type_rawdata_buffer_max_impl 
@@ -41,7 +41,7 @@ void __po_hi_unmarshall_type_rawdata_buffer_max_impl
     __po_hi_uint32_t* offset)
 {
 
-  __po_hi_unmarshall_array (value, message, 33554432, offset);
+  __po_hi_unmarshall_array (value, message, 12583112, offset);
 }
 
 void __po_hi_marshall_type_stream_element_buffer 

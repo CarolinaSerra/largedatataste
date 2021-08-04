@@ -1,0 +1,12 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Kinit_sender[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/wrappers/sender_vm_if.c:25:19:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_startup[m[K' [[01;35m[K-Wnested-externs[m[K]
+       extern void [01;35m[Ksender_startup[m[K(void);
+                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Ksender_testint[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/wrappers/sender_vm_if.c:50:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_PI_testint[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Ksender_PI_testint[m[K
+                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Ksender_trigger[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/wrappers/sender_vm_if.c:63:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_PI_trigger[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Ksender_PI_trigger[m[K(void);
+                [01;35m[K^~~~~~~~~~~~~~~~~[m[K

@@ -10,7 +10,7 @@
  */
 
 #include "sender.h"
-#include "raw.h"
+//#include "raw.h"
 //#include <stdio.h>
 
 
@@ -22,6 +22,7 @@ void sender_startup(void)
 
 void sender_PI_trigger(void)
 {
+    asn1SccRawData raw_data;
     puts ("Sending image");
    sender_RI_image( &raw_data );
 }

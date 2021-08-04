@@ -30,7 +30,7 @@ void asn1SccMyInteger_Initialize(asn1SccMyInteger* pVal)
 flag asn1SccMyInteger_IsConstraintValid(const asn1SccMyInteger* pVal, int* pErrCode)
 {
     flag ret = TRUE;
-    ret = ((*(pVal)) <= 65540UL);
+    ret = ((*(pVal)) <= 255UL);
     *pErrCode = ret ? 0 :  ERR_MYINTEGER; 
 
 	return ret;
@@ -43,7 +43,7 @@ flag asn1SccMyInteger_Encode(const asn1SccMyInteger* pVal, BitStream* pBitStrm, 
 
 	ret = bCheckConstraints ? asn1SccMyInteger_IsConstraintValid(pVal, pErrCode) : TRUE ;
 	if (ret) {
-	    BitStream_EncodeConstraintPosWholeNumber(pBitStrm, (*(pVal)), 0, 65540);
+	    BitStream_EncodeConstraintPosWholeNumber(pBitStrm, (*(pVal)), 0, 255);
     } /*COVERAGE_IGNORE*/
 
 	
@@ -56,7 +56,7 @@ flag asn1SccMyInteger_Decode(asn1SccMyInteger* pVal, BitStream* pBitStrm, int* p
 	*pErrCode = 0;
 
 
-	ret = BitStream_DecodeConstraintPosWholeNumber(pBitStrm, pVal, 0, 65540);
+	ret = BitStream_DecodeConstraintPosWholeNumber(pBitStrm, pVal, 0, 255);
 	*pErrCode = ret ? 0 : ERR_UPER_DECODE_MYINTEGER;
 
 	return ret  && asn1SccMyInteger_IsConstraintValid(pVal, pErrCode);
@@ -68,7 +68,7 @@ flag asn1SccMyInteger_ACN_Encode(const asn1SccMyInteger* pVal, BitStream* pBitSt
 
 	ret = bCheckConstraints ? asn1SccMyInteger_IsConstraintValid(pVal, pErrCode) : TRUE ;
 	if (ret) {
-	    BitStream_EncodeConstraintPosWholeNumber(pBitStrm, (*(pVal)), 0, 65540);
+	    BitStream_EncodeConstraintPosWholeNumber(pBitStrm, (*(pVal)), 0, 255);
     } /*COVERAGE_IGNORE*/
 
 	
@@ -81,7 +81,7 @@ flag asn1SccMyInteger_ACN_Decode(asn1SccMyInteger* pVal, BitStream* pBitStrm, in
 	*pErrCode = 0;
 
 
-	ret = BitStream_DecodeConstraintPosWholeNumber(pBitStrm, pVal, 0, 65540);
+	ret = BitStream_DecodeConstraintPosWholeNumber(pBitStrm, pVal, 0, 255);
 	*pErrCode = ret ? 0 : ERR_ACN_DECODE_MYINTEGER;
 
     return ret && asn1SccMyInteger_IsConstraintValid(pVal, pErrCode);
@@ -91,15 +91,7 @@ flag asn1SccMyInteger_ACN_Decode(asn1SccMyInteger* pVal, BitStream* pBitStrm, in
 
 flag asn1SccRawData_Equal(const asn1SccRawData* pVal1, const asn1SccRawData* pVal2)
 {
-	flag ret=TRUE;
-    int i1;
-
-    for(i1 = 0; ret && i1 < 4194304; i1++) 
-    {
-    	ret = (pVal1->arr[i1] == pVal2->arr[i1]);
-    }
-
-	return ret;
+	return memcmp(pVal1->arr, pVal2->arr, 12582912) ==0	;
 
 }
 
@@ -107,24 +99,18 @@ void asn1SccRawData_Initialize(asn1SccRawData* pVal)
 {
 	(void)pVal;
 
-    int i1;
 
-	i1 = 0;
-	while (i1< 4194304) {
-	    asn1SccMyInteger_Initialize((&(pVal->arr[i1])));
-	    i1 = i1 + 1;
-	}
+	memset(pVal->arr, 0x0, 12582912);
+
 
 }
 
 flag asn1SccRawData_IsConstraintValid(const asn1SccRawData* pVal, int* pErrCode)
 {
     flag ret = TRUE;
-    int i1;
-    for(i1 = 0; ret && i1 < 4194304; i1++) 
-    {
-    	ret = asn1SccMyInteger_IsConstraintValid((&(pVal->arr[i1])), pErrCode);
-    }
+	(void)pVal;
+    ret = TRUE;
+    *pErrCode = 0;
 
 	return ret;
 }
@@ -140,14 +126,14 @@ flag asn1SccRawData_Encode(const asn1SccRawData* pVal, BitStream* pBitStrm, int*
 	asn1SccSint nCurOffset1;
 	ret = bCheckConstraints ? asn1SccRawData_IsConstraintValid(pVal, pErrCode) : TRUE ;
 	if (ret) {
-	    //encode 64 x 64K Blocks
+	    //encode 192 x 64K Blocks
 	    nCurBlockSize1 = 0x10000;
 	    nCurOffset1 = 0;
-	    for(nBlockIndex1 = 0; nBlockIndex1 < 64; nBlockIndex1++) {
+	    for(nBlockIndex1 = 0; nBlockIndex1 < 192; nBlockIndex1++) {
 	    	BitStream_EncodeConstraintWholeNumber(pBitStrm, 0xC4, 0, 0xFF); 
 	    	for(i1=(int)nCurOffset1; i1 < (int)(nCurBlockSize1 + nCurOffset1); i1++)
 	    	{
-	    		ret = asn1SccMyInteger_Encode((&(pVal->arr[i1])), pBitStrm, pErrCode, FALSE);
+	    		BitStream_AppendByte0(pBitStrm, pVal->arr[i1]);
 	    	}
 
 	        nCurOffset1 += nCurBlockSize1;
@@ -169,17 +155,18 @@ flag asn1SccRawData_Decode(asn1SccRawData* pVal, BitStream* pBitStrm, int* pErrC
 	asn1SccSint nCurBlockSize1;
 	asn1SccSint nCurOffset1;
 
-	//we expect to decode 64 Blocks and each block must contain 64K elements. Each block must begin with the byte 0xC4
+	//we expect to decode 192 Blocks and each block must contain 64K elements. Each block must begin with the byte 0xC4
 	nCurBlockSize1 = 0x10000;
 	nCurOffset1 = 0;
 	*pErrCode = ERR_UPER_DECODE_RAWDATA; 
-	for(nBlockIndex1 = 0; ret && nBlockIndex1 < 64; nBlockIndex1++) {
+	for(nBlockIndex1 = 0; ret && nBlockIndex1 < 192; nBlockIndex1++) {
 	    ret = BitStream_DecodeConstraintWholeNumber(pBitStrm, &nRemainingItemsVar1, 0, 0xFF);
 	    ret = ret && (nRemainingItemsVar1 == 0xC4);
 	    *pErrCode = ret ? 0 : ERR_UPER_DECODE_RAWDATA;
 		if (ret) {
 		    for(i1=(int)nCurOffset1; i1 < (int)(nCurBlockSize1 + nCurOffset1); i1++) {
-			    ret = asn1SccMyInteger_Decode((&(pVal->arr[i1])), pBitStrm, pErrCode);
+			    ret = BitStream_ReadByte(pBitStrm, &(pVal->arr[i1])); 
+			    *pErrCode = ret ? 0 : ERR_UPER_DECODE_RAWDATA;
 		    }
 
 	        nCurOffset1 += nCurBlockSize1;
@@ -199,14 +186,14 @@ flag asn1SccRawData_ACN_Encode(const asn1SccRawData* pVal, BitStream* pBitStrm, 
 	asn1SccSint nCurOffset1;
 	ret = bCheckConstraints ? asn1SccRawData_IsConstraintValid(pVal, pErrCode) : TRUE ;
 	if (ret) {
-	    //encode 64 x 64K Blocks
+	    //encode 192 x 64K Blocks
 	    nCurBlockSize1 = 0x10000;
 	    nCurOffset1 = 0;
-	    for(nBlockIndex1 = 0; nBlockIndex1 < 64; nBlockIndex1++) {
+	    for(nBlockIndex1 = 0; nBlockIndex1 < 192; nBlockIndex1++) {
 	    	BitStream_EncodeConstraintWholeNumber(pBitStrm, 0xC4, 0, 0xFF); 
 	    	for(i1=(int)nCurOffset1; i1 < (int)(nCurBlockSize1 + nCurOffset1); i1++)
 	    	{
-	    		ret = asn1SccMyInteger_ACN_Encode((&(pVal->arr[i1])), pBitStrm, pErrCode, FALSE);
+	    		BitStream_AppendByte0(pBitStrm, pVal->arr[i1]);
 	    	}
 
 	        nCurOffset1 += nCurBlockSize1;
@@ -228,17 +215,18 @@ flag asn1SccRawData_ACN_Decode(asn1SccRawData* pVal, BitStream* pBitStrm, int* p
 	asn1SccSint nCurBlockSize1;
 	asn1SccSint nCurOffset1;
 
-	//we expect to decode 64 Blocks and each block must contain 64K elements. Each block must begin with the byte 0xC4
+	//we expect to decode 192 Blocks and each block must contain 64K elements. Each block must begin with the byte 0xC4
 	nCurBlockSize1 = 0x10000;
 	nCurOffset1 = 0;
 	*pErrCode = ERR_ACN_DECODE_RAWDATA; 
-	for(nBlockIndex1 = 0; ret && nBlockIndex1 < 64; nBlockIndex1++) {
+	for(nBlockIndex1 = 0; ret && nBlockIndex1 < 192; nBlockIndex1++) {
 	    ret = BitStream_DecodeConstraintWholeNumber(pBitStrm, &nRemainingItemsVar1, 0, 0xFF);
 	    ret = ret && (nRemainingItemsVar1 == 0xC4);
 	    *pErrCode = ret ? 0 : ERR_ACN_DECODE_RAWDATA;
 		if (ret) {
 		    for(i1=(int)nCurOffset1; i1 < (int)(nCurBlockSize1 + nCurOffset1); i1++) {
-			    ret = asn1SccMyInteger_ACN_Decode((&(pVal->arr[i1])), pBitStrm, pErrCode);
+			    ret = BitStream_ReadByte(pBitStrm, &(pVal->arr[i1])); 
+			    *pErrCode = ret ? 0 : ERR_ACN_DECODE_RAWDATA;
 		    }
 
 	        nCurOffset1 += nCurBlockSize1;

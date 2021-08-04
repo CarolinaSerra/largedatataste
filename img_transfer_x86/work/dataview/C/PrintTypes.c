@@ -38,15 +38,13 @@ void PrintRawData(const char *paramName, const asn1SccRawData *pData)
 #endif
 #ifdef __unix__
     {
-        int i1;
-        for(i1=0; i1<4194304; i1++) {
-            #if WORD_SIZE==8
-            printf("%s::Elem %"PRId64"\n", paramName, (*pData).arr[i1]);
-            #else
-            printf("%s::Elem %d\n", paramName, (*pData).arr[i1]);
-            #endif
-        }
+        int i;
+        printf("%s ", paramName);
+        for(i=0; i<12582912; i++)
+            printf("%c", (*pData).arr[i]);
+        printf("\n");
     }
+
 #endif
 #ifdef __linux__
     pthread_mutex_unlock(&g_printing_mutex);
