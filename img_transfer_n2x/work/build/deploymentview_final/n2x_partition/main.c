@@ -49,7 +49,7 @@ __PO_HI_MAIN_TYPE __PO_HI_MAIN_NAME (void)
 /*!
  * Making Sporadic task
  */
-  __po_hi_create_sporadic_task (n2x_partition_receiver_image_k, &(period), 1, 50000000, 0, receiver_image_job);
+  __po_hi_create_sporadic_task (n2x_partition_receiver_image_k, &(period), 1, 50000, 0, receiver_image_job);
   
 /*!
  * Store the period time for task sender_trigger
@@ -63,9 +63,9 @@ __PO_HI_MAIN_TYPE __PO_HI_MAIN_NAME (void)
  * parameter is the task identifier defined in deployment.h 
  * (n2x_partition_sender_trigger_k) the second is the period defined in the 
  * AADL model. Third is the task priority ( 1), fourth is the stack size ( 
- * 5000 bytes) and last is the subprogram executed by the task
+ * 50000 bytes) and last is the subprogram executed by the task
  */
-  __po_hi_create_periodic_task (n2x_partition_sender_trigger_k, &(period), 1, 5000, 0, sender_trigger_job);
+  __po_hi_create_periodic_task (n2x_partition_sender_trigger_k, &(period), 1, 50000, 0, sender_trigger_job);
   
 /*!
  * Waiting for other tasks initialization

@@ -1,4 +1,4 @@
-[01m[K/home/taste/projects/img_transfer_n2x/work/build/node1/n2x_partition/n2x_partition_polyorb_interface.c:[m[K In function '[01m[Kpro_receiver_image[m[K':
-[01m[K/home/taste/projects/img_transfer_n2x/work/build/node1/n2x_partition/n2x_partition_polyorb_interface.c:11:51:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+[01m[K/home/taste/projects/largedatataste/img_transfer_n2x/work/build/node1/n2x_partition/n2x_partition_polyorb_interface.c:[m[K In function '[01m[Kpro_receiver_image[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_n2x/work/build/node1/n2x_partition/n2x_partition_polyorb_interface.c:11:51:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
     extern process_package__taste_protected_object [01;35m[Kreceiver_protected[m[K;
                                                    [01;35m[K^~~~~~~~~~~~~~~~~~[m[K

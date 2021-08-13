@@ -70,7 +70,7 @@ void receiver_image_deliver
 /*  Sporadic task : receiver_image */
 extern void call_receiver_image 
     (__po_hi_task_id self,
-    dataview__rawdata_buffer_impl inport_image);
+    dataview__rawdata_buffer_impl* inport_image);
 extern void init_receiver (void);
 void* receiver_image_job (void)
 {
@@ -110,7 +110,7 @@ void* receiver_image_job (void)
 
         }
 
-        call_receiver_image (n2x_partition_receiver_image_k, inport_image_request->vars.receiver_image_global_inport_image.receiver_image_global_inport_image);
+        call_receiver_image (n2x_partition_receiver_image_k, &(inport_image_request->vars.receiver_image_global_inport_image.receiver_image_global_inport_image));
 
         break;
       }

@@ -61,7 +61,7 @@ typedef enum
 
 #define __PO_HI_NB_TASKS 2
 
-#define __PO_HI_TASKS_STACK 50005000
+#define __PO_HI_TASKS_STACK 100000
 
 #define __PO_HI_NB_PROTECTED 2
 

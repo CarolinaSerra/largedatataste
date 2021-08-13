@@ -22,7 +22,7 @@ properties
    Period                            => 1 ms;
    Dispatch_Offset                   =>  0 ms;
    Compute_Execution_Time            =>  0 ms ..  0 ms;
-   Stack_Size                        => 50000000 Bytes;
+   Stack_Size                        => 50000 Bytes;
    Priority                          => 1;
 end Receiver_Image.others;
 
@@ -46,7 +46,7 @@ properties
    Period                            =>  200 ms;
    Dispatch_Offset                   =>  0 ms;
    Compute_Execution_Time            =>  0 ms ..  0 ms;
-   Stack_Size                        => 5000 Bytes;
+   Stack_Size                        => 50000 Bytes;
    Priority                          => 1;
 end Sender_Trigger.others;
 

@@ -1,4 +1,4 @@
-[01m[K/home/taste/projects/img_transfer_n2x/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_image[m[K':
-[01m[K/home/taste/projects/img_transfer_n2x/work/sender/C/wrappers/sender_invoke_ri.c:50:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_image[m[K' [[01;35m[K-Wnested-externs[m[K]
+[01m[K/home/taste/projects/largedatataste/img_transfer_n2x/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_image[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_n2x/work/sender/C/wrappers/sender_invoke_ri.c:36:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_image[m[K' [[01;35m[K-Wnested-externs[m[K]
     extern void [01;35m[Kvm_sender_image[m[K
                 [01;35m[K^~~~~~~~~~~~~~~[m[K

@@ -84,6 +84,7 @@ project N2x_Partition is
          "-ffunction-sections",
          "-fdiagnostics-color=always",
          "-Wno-cast-function-type",
+         "-fstack-usage",
          "-Wswitch")
          & External_As_List ("N2X_PARTITION_USER_CFLAGS", " ")
          & External_As_List ("USER_CFLAGS", " ");
@@ -135,6 +136,5 @@ project N2x_Partition is
    package Builder is
       for Executable ("main.c") use "n2x_partition";
    end Builder;
+
 end N2x_Partition;
-
-

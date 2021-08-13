@@ -23,35 +23,21 @@ void sender_RI_image
          innerMsc = (NULL != getenv("TASTE_INNER_MSC"))?1:0;
       if (1 == innerMsc) {
          long long msc_time = getTimeInMilliseconds();
-         PrintASN1RawData ("INNERDATA: image::RawData::img_data", IN_img_data);
-         puts(""); // add newline
+         // PrintASN1RawData ("INNERDATA: image::RawData::img_data", IN_img_data);
+         // puts("");
          // Log message to receiver (corresponding PI: image)
-         printf ("INNER: sender,receiver,image,%lld\n", msc_time);
+         printf ("INNER_RI: sender,receiver,image,%lld\n", msc_time);
          fflush(stdout);
       }
    #endif
-   // Encode parameter img_data
-   static asn1SccRawData IN_buf_img_data;
-   int size_IN_buf_img_data =
-      Encode_NATIVE_RawData
-        ((void *)&IN_buf_img_data,
-          sizeof(asn1SccRawData),
-          (asn1SccRawData *)IN_img_data);
-   if (-1 == size_IN_buf_img_data) {
-      #ifdef __unix__
-         puts ("[ERROR] ASN.1 Encoding failed in sender_RI_image, parameter img_data");
-      #endif
-        /* Crash the application due to message loss */
-        abort();
-   }
 
 
-   // Call Middleware interface
+   // Send the message via the middleware API
    extern void vm_sender_image
      (void *, size_t);
 
    vm_sender_image
-     ((void *)&IN_buf_img_data, (size_t)size_IN_buf_img_data);
+     ((void *)IN_img_data, sizeof(asn1SccRawData));
 
 
 }

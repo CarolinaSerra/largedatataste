@@ -34,7 +34,7 @@ void vm_sender_image
 // End of the required interfaces of function sender
 
 
-void call_receiver_image (__po_hi_task_id, dataview__rawdata_buffer_impl);
+void call_receiver_image (__po_hi_task_id, dataview__rawdata_buffer_impl *);
 
 
 // This is the list of remote threads/RIs :
