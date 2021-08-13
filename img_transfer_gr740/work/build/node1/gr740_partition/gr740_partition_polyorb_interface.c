@@ -44,12 +44,12 @@ void vm_sender_image
 
 #include "receiver_vm_if.h"
 
-void call_receiver_image (__po_hi_task_id sender_pid, dataview__rawdata_buffer_impl buf)
+void call_receiver_image (__po_hi_task_id sender_pid, dataview__rawdata_buffer_impl *buf)
 
 {
    (void)sender_pid; // sender id is not used for now
 
-   receiver_image (buf.buffer, buf.length);
+   receiver_image (buf->buffer, buf->length);
 }
 #include "sender_vm_if.h"
 

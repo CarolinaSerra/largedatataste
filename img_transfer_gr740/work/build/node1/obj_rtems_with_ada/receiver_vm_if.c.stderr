@@ -6,3 +6,6 @@
 [01m[K/home/taste/projects/largedatataste/img_transfer_gr740/work/receiver/C/wrappers/receiver_vm_if.c:50:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_PI_image[m[K' [[01;35m[K-Wnested-externs[m[K]
     extern void [01;35m[Kreceiver_PI_image[m[K
                 [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740/work/receiver/C/wrappers/receiver_vm_if.c:34:40:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_img_data_len[m[K' [[01;35m[K-Wunused-parameter[m[K]
+       (const char *IN_img_data, size_t [01;35m[KIN_img_data_len[m[K)
+                                        [01;35m[K^~~~~~~~~~~~~~~[m[K

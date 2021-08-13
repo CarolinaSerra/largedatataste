@@ -84,6 +84,7 @@ project Gr740_Partition is
          "-ffunction-sections",
          "-fdiagnostics-color=always",
          "-Wno-cast-function-type",
+         "-fstack-usage",
          "-Wswitch")
          & External_As_List ("GR740_PARTITION_USER_CFLAGS", " ")
          & External_As_List ("USER_CFLAGS", " ");
@@ -135,6 +136,5 @@ project Gr740_Partition is
    package Builder is
       for Executable ("main.c") use "gr740_partition";
    end Builder;
+
 end Gr740_Partition;
-
-
