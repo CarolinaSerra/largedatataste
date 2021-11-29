@@ -1,0 +1,56 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_a[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:34:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_a[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_a[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_c[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:62:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_c[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_c[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_e[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:90:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_e[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_e[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_g[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:118:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_g[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_g[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_i[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:146:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_i[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_i[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_image[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:174:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_image[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_image[m[K
+                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_k[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:202:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_k[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_k[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_m[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:230:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_m[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_m[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_o[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:258:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_o[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_o[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_q[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:286:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_q[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_q[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_s[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:314:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_s[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_s[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_u[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:342:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_u[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_u[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_w[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:370:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_w[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_w[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:[m[K In function '[01m[Ksender_RI_y[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo_24unp/work/sender/C/wrappers/sender_invoke_ri.c:398:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kvm_sender_y[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Kvm_sender_y[m[K
+                [01;35m[K^~~~~~~~~~~[m[K

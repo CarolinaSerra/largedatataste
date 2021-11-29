@@ -3,7 +3,7 @@
    __po_hi_uint8_t [01;35m[Kndest[m[K;
                    [01;35m[K^~~~~[m[K
 [01m[K/home/taste/projects/largedatataste/img_transfer_gr740/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_get_mynode[m[K':
-[01m[K/home/taste/projects/largedatataste/img_transfer_gr740/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:290:25:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_mynode[m[K' [[01;35m[K-Wnested-externs[m[K]
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:291:25:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_mynode[m[K' [[01;35m[K-Wnested-externs[m[K]
    extern __po_hi_node_t [01;35m[K__po_hi_mynode[m[K;
                          [01;35m[K^~~~~~~~~~~~~~[m[K
 [01m[K/home/taste/projects/largedatataste/img_transfer_gr740/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_get_model_name[m[K':

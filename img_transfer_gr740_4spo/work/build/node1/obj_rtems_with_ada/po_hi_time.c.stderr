@@ -1,0 +1,7 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_time.c:[m[K In function '[01m[Kmilliseconds_since_epoch[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_time.c:333:32:[m[K [01;35m[Kwarning: [m[K'[01m[Kmy_time.nsec[m[K' may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+     (int) ([01;35m[K((int) my_time.nsec - (int) epoch.nsec)[m[K / 1000000.0);
+            [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_time.c:332:23:[m[K [01;35m[Kwarning: [m[K'[01m[Kmy_time.sec[m[K' may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+   return [01;35m[K(my_time.sec - epoch.sec)[m[K * 1000 +
+          [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~[m[K

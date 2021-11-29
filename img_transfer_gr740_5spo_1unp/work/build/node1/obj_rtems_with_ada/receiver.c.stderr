@@ -1,0 +1,7 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_5spo_1unp/work/receiver/C/src/receiver.c:45:6:[m[K [01;35m[Kwarning: [m[Kno previous prototype for '[01m[Kreceiver_PI_e[m[K' [[01;35m[K-Wmissing-prototypes[m[K]
+ void [01;35m[Kreceiver_PI_e[m[K( const asn1SccMyInteger *IN_vare ){
+      [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_5spo_1unp/work/receiver/C/src/receiver.c:[m[K In function '[01m[Kreceiver_PI_e[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_5spo_1unp/work/receiver/C/src/receiver.c:45:45:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_vare[m[K' [[01;35m[K-Wunused-parameter[m[K]
+ void receiver_PI_e( const asn1SccMyInteger *[01;35m[KIN_vare[m[K ){
+                                             [01;35m[K^~~~~~~[m[K

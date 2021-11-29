@@ -1,0 +1,17 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:[m[K In function '[01m[Ksender_PI_testint[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:39:32:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K%d[m[K' expects argument of type '[01m[Kint[m[K', but argument 2 has type '[01m[Kasn1SccMyInteger {aka const long long unsigned int}[m[K' [[01;35m[K-Wformat=[m[K]
+         printf("WRONG VALUES: [01;35m[K%d[m[K\n", [32m[K*IN_int2[m[K);
+                               [01;35m[K~^[m[K     [32m[K~~~~~~~~[m[K
+                               [32m[K%lld[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:[m[K In function '[01m[Ksender_PI_d[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:48:43:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_vard[m[K' [[01;35m[K-Wunused-parameter[m[K]
+ void sender_PI_d( const asn1SccMyInteger *[01;35m[KIN_vard[m[K ){
+                                           [01;35m[K^~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:[m[K At top level:
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:51:6:[m[K [01;35m[Kwarning: [m[Kno previous prototype for '[01m[Ksender_PI_f[m[K' [[01;35m[K-Wmissing-prototypes[m[K]
+ void [01;35m[Ksender_PI_f[m[K( const asn1SccMyInteger *IN_varf ){
+      [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:[m[K In function '[01m[Ksender_PI_f[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/src/sender.c:51:43:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_varf[m[K' [[01;35m[K-Wunused-parameter[m[K]
+ void sender_PI_f( const asn1SccMyInteger *[01;35m[KIN_varf[m[K ){
+                                           [01;35m[K^~~~~~~[m[K

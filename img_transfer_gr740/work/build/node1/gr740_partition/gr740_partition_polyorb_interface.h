@@ -37,11 +37,6 @@ void vm_sender_image
 void call_receiver_image (__po_hi_task_id, dataview__rawdata_buffer_impl *);
 
 
-// This is the list of remote threads/RIs :
-
 void call_sender_trigger (__po_hi_task_id);
 
-
-// This is the list of remote threads/RIs :
-// receiver_image.image
 

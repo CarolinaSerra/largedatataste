@@ -1,0 +1,38 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Kinit_sender[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:25:19:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_startup[m[K' [[01;35m[K-Wnested-externs[m[K]
+       extern void [01;35m[Ksender_startup[m[K(void);
+                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Ksender_b[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:50:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_PI_b[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Ksender_PI_b[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:57:17:[m[K [01;35m[Kwarning: [m[Kcast increases required alignment of target type [[01;35m[K-Wcast-align[m[K]
+    sender_PI_b ([01;35m[K([m[Kasn1SccMyInteger *)IN_varb);
+                 [01;35m[K^[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:34:36:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_varb_len[m[K' [[01;35m[K-Wunused-parameter[m[K]
+       (const char *IN_varb, size_t [01;35m[KIN_varb_len[m[K)
+                                    [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Ksender_d[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:77:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_PI_d[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Ksender_PI_d[m[K
+                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:84:17:[m[K [01;35m[Kwarning: [m[Kcast increases required alignment of target type [[01;35m[K-Wcast-align[m[K]
+    sender_PI_d ([01;35m[K([m[Kasn1SccMyInteger *)IN_vard);
+                 [01;35m[K^[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:61:36:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_vard_len[m[K' [[01;35m[K-Wunused-parameter[m[K]
+       (const char *IN_vard, size_t [01;35m[KIN_vard_len[m[K)
+                                    [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Ksender_testint[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:104:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_PI_testint[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Ksender_PI_testint[m[K
+                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:111:23:[m[K [01;35m[Kwarning: [m[Kcast increases required alignment of target type [[01;35m[K-Wcast-align[m[K]
+    sender_PI_testint ([01;35m[K([m[Kasn1SccMyInteger *)IN_int2);
+                       [01;35m[K^[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:88:36:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[KIN_int2_len[m[K' [[01;35m[K-Wunused-parameter[m[K]
+       (const char *IN_int2, size_t [01;35m[KIN_int2_len[m[K)
+                                    [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:[m[K In function '[01m[Ksender_trigger[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/sender/C/wrappers/sender_vm_if.c:129:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_PI_trigger[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern void [01;35m[Ksender_PI_trigger[m[K(void);
+                [01;35m[K^~~~~~~~~~~~~~~~~[m[K

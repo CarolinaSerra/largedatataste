@@ -1,0 +1,24 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_send[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:100:19:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Kndest[m[K' set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   __po_hi_uint8_t [01;35m[Kndest[m[K;
+                   [01;35m[K^~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_get_mynode[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:291:25:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_mynode[m[K' [[01;35m[K-Wnested-externs[m[K]
+   extern __po_hi_node_t [01;35m[K__po_hi_mynode[m[K;
+                         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_get_model_name[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:505:16:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_port_global_model_names[m[K' [[01;35m[K-Wnested-externs[m[K]
+   extern char *[01;35m[K__po_hi_port_global_model_names[m[K[__PO_HI_NB_PORTS];
+                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_get_queue_size[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:518:27:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_port_global_queue_size[m[K' [[01;35m[K-Wnested-externs[m[K]
+   extern __po_hi_uint32_t [01;35m[K__po_hi_port_global_queue_size[m[K[__PO_HI_NB_PORTS];
+                           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_get_data_size[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:531:27:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_port_global_data_size[m[K' [[01;35m[K-Wnested-externs[m[K]
+   extern __po_hi_uint32_t [01;35m[K__po_hi_port_global_data_size[m[K[__PO_HI_NB_PORTS];
+                           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:[m[K In function '[01m[K__po_hi_transport_get_port_kind[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_6spo/work/build/deploymentview_final/polyorb-hi-c/src/po_hi_transport.c:544:30:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[K__po_hi_port_global_kind[m[K' [[01;35m[K-Wnested-externs[m[K]
+   extern __po_hi_port_kind_t [01;35m[K__po_hi_port_global_kind[m[K[__PO_HI_NB_PORTS];
+                              [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K

@@ -1,0 +1,1214 @@
+---------------------------------------------------
+-- AADL2.2
+-- TASTE type interfaceview
+-- 
+-- generated code: do not edit
+---------------------------------------------------
+
+PACKAGE interfaceview::IV::sender
+PUBLIC
+
+WITH interfaceview::IV::receiver;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_trigger
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_trigger;
+
+SUBPROGRAM IMPLEMENTATION PI_trigger.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_trigger.others;
+
+SUBPROGRAM PI_testint
+FEATURES
+  int2 : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_testint;
+
+SUBPROGRAM IMPLEMENTATION PI_testint.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_testint.others;
+
+SUBPROGRAM PI_b
+FEATURES
+  varb : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_b;
+
+SUBPROGRAM IMPLEMENTATION PI_b.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_b.others;
+
+SUBPROGRAM PI_d
+FEATURES
+  vard : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_d;
+
+SUBPROGRAM IMPLEMENTATION PI_d.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_d.others;
+
+SUBPROGRAM PI_f
+FEATURES
+  varf : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_f;
+
+SUBPROGRAM IMPLEMENTATION PI_f.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_f.others;
+
+SUBPROGRAM PI_h
+FEATURES
+  varh : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_h;
+
+SUBPROGRAM IMPLEMENTATION PI_h.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_h.others;
+
+SUBPROGRAM PI_j
+FEATURES
+  j : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_j;
+
+SUBPROGRAM IMPLEMENTATION PI_j.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_j.others;
+
+SUBPROGRAM PI_l
+FEATURES
+  varl : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_l;
+
+SUBPROGRAM IMPLEMENTATION PI_l.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_l.others;
+
+SUBPROGRAM PI_n
+FEATURES
+  varn : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_n;
+
+SUBPROGRAM IMPLEMENTATION PI_n.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_n.others;
+
+SUBPROGRAM PI_p
+FEATURES
+  varp : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_p;
+
+SUBPROGRAM IMPLEMENTATION PI_p.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_p.others;
+
+SUBPROGRAM PI_r
+FEATURES
+  varr : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_r;
+
+SUBPROGRAM IMPLEMENTATION PI_r.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_r.others;
+
+SUBPROGRAM PI_t
+FEATURES
+  vart : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_t;
+
+SUBPROGRAM IMPLEMENTATION PI_t.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_t.others;
+
+SUBPROGRAM PI_v
+FEATURES
+  varv : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_v;
+
+SUBPROGRAM IMPLEMENTATION PI_v.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_v.others;
+
+SUBPROGRAM PI_x
+FEATURES
+  varx : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_x;
+
+SUBPROGRAM IMPLEMENTATION PI_x.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_x.others;
+
+SUBPROGRAM PI_z
+FEATURES
+  varz : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_z;
+
+SUBPROGRAM IMPLEMENTATION PI_z.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_z.others;
+
+SUBPROGRAM RI_image
+FEATURES
+  img_data : IN PARAMETER DataView::RawData {
+    Taste::encoding => NATIVE;
+  };
+END RI_image;
+
+SUBPROGRAM IMPLEMENTATION RI_image.others
+END RI_image.others;
+
+SUBPROGRAM RI_a
+FEATURES
+  vara : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_a;
+
+SUBPROGRAM IMPLEMENTATION RI_a.others
+END RI_a.others;
+
+SUBPROGRAM RI_c
+FEATURES
+  varc : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_c;
+
+SUBPROGRAM IMPLEMENTATION RI_c.others
+END RI_c.others;
+
+SUBPROGRAM RI_e
+FEATURES
+  vare : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_e;
+
+SUBPROGRAM IMPLEMENTATION RI_e.others
+END RI_e.others;
+
+SUBPROGRAM RI_i
+FEATURES
+  vari : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_i;
+
+SUBPROGRAM IMPLEMENTATION RI_i.others
+END RI_i.others;
+
+SUBPROGRAM RI_g
+FEATURES
+  varg : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_g;
+
+SUBPROGRAM IMPLEMENTATION RI_g.others
+END RI_g.others;
+
+SUBPROGRAM RI_k
+FEATURES
+  vark : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_k;
+
+SUBPROGRAM IMPLEMENTATION RI_k.others
+END RI_k.others;
+
+SUBPROGRAM RI_m
+FEATURES
+  varm : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_m;
+
+SUBPROGRAM IMPLEMENTATION RI_m.others
+END RI_m.others;
+
+SUBPROGRAM RI_o
+FEATURES
+  varo : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_o;
+
+SUBPROGRAM IMPLEMENTATION RI_o.others
+END RI_o.others;
+
+SUBPROGRAM RI_q
+FEATURES
+  varq : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_q;
+
+SUBPROGRAM IMPLEMENTATION RI_q.others
+END RI_q.others;
+
+SUBPROGRAM RI_s
+FEATURES
+  vars : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_s;
+
+SUBPROGRAM IMPLEMENTATION RI_s.others
+END RI_s.others;
+
+SUBPROGRAM RI_u
+FEATURES
+  varu : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_u;
+
+SUBPROGRAM IMPLEMENTATION RI_u.others
+END RI_u.others;
+
+SUBPROGRAM RI_w
+FEATURES
+  varw : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_w;
+
+SUBPROGRAM IMPLEMENTATION RI_w.others
+END RI_w.others;
+
+SUBPROGRAM RI_y
+FEATURES
+  vary : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_y;
+
+SUBPROGRAM IMPLEMENTATION RI_y.others
+END RI_y.others;
+
+SYSTEM sender
+FEATURES
+  PI_trigger : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_trigger.others {
+    Taste::coordinates => "77227 3500";
+    Taste::RCMoperationKind => cyclic;
+    Taste::RCMperiod => 200 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "trigger";
+  };
+  PI_testint : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_testint.others {
+    Taste::coordinates => "114759 21540";
+    Taste::RCMoperationKind => sporadic;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "testint";
+  };
+  PI_b : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_b.others {
+    Taste::coordinates => "114759 35972";
+    Taste::RCMoperationKind => sporadic;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "b";
+  };
+  PI_d : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_d.others {
+    Taste::coordinates => "114759 50404";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "d";
+  };
+  PI_f : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_f.others {
+    Taste::coordinates => "114759 67709";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "f";
+  };
+  PI_h : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_h.others {
+    Taste::coordinates => "114759 79788";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "h";
+  };
+  PI_j : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_j.others {
+    Taste::coordinates => "114759 89324";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "j";
+  };
+  PI_l : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_l.others {
+    Taste::coordinates => "114759 101244";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "l";
+  };
+  PI_n : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_n.others {
+    Taste::coordinates => "114759 111763";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "n";
+  };
+  PI_p : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_p.others {
+    Taste::coordinates => "114759 125569";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "p";
+  };
+  PI_r : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_r.others {
+    Taste::coordinates => "114759 137558";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "r";
+  };
+  PI_t : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_t.others {
+    Taste::coordinates => "114759 153543";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "t";
+  };
+  PI_v : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_v.others {
+    Taste::coordinates => "114759 163352";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "v";
+  };
+  PI_x : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_x.others {
+    Taste::coordinates => "114759 174251";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "x";
+  };
+  PI_z : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_z.others {
+    Taste::coordinates => "114759 180232";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "z";
+  };
+  RI_image : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_image.others {
+    Taste::coordinates => "114759 8912";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "image";
+    Taste::labelInheritance => "true";
+  };
+  RI_a : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_a.others {
+    Taste::coordinates => "114759 28756";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "a";
+    Taste::labelInheritance => "true";
+  };
+  RI_c : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_c.others {
+    Taste::coordinates => "114759 43188";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "c";
+    Taste::labelInheritance => "true";
+  };
+  RI_e : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_e.others {
+    Taste::coordinates => "114759 58332";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "e";
+    Taste::labelInheritance => "true";
+  };
+  RI_i : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_i.others {
+    Taste::coordinates => "114759 85986";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "i";
+    Taste::labelInheritance => "true";
+  };
+  RI_g : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_g.others {
+    Taste::coordinates => "114759 72636";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "g";
+    Taste::labelInheritance => "true";
+  };
+  RI_k : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_k.others {
+    Taste::coordinates => "114759 94092";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "k";
+    Taste::labelInheritance => "true";
+  };
+  RI_m : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_m.others {
+    Taste::coordinates => "114759 105224";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "m";
+    Taste::labelInheritance => "true";
+  };
+  RI_o : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_o.others {
+    Taste::coordinates => "114759 116123";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "o";
+    Taste::labelInheritance => "true";
+  };
+  RI_q : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_q.others {
+    Taste::coordinates => "114759 130655";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "q";
+    Taste::labelInheritance => "true";
+  };
+  RI_s : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_s.others {
+    Taste::coordinates => "114759 141554";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "s";
+    Taste::labelInheritance => "true";
+  };
+  RI_u : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_u.others {
+    Taste::coordinates => "114759 158629";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "u";
+    Taste::labelInheritance => "true";
+  };
+  RI_w : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_w.others {
+    Taste::coordinates => "114759 166985";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "w";
+    Taste::labelInheritance => "true";
+  };
+  RI_y : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_y.others {
+    Taste::coordinates => "114759 177884";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "y";
+    Taste::labelInheritance => "true";
+  };
+PROPERTIES
+  Source_Language => (C);
+  Taste::Active_Interfaces => any;
+END sender;
+
+SYSTEM IMPLEMENTATION sender.others
+END sender.others;
+
+END interfaceview::IV::sender;
+
+PACKAGE interfaceview::IV::receiver
+PUBLIC
+
+WITH interfaceview::IV::sender;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_image
+FEATURES
+  img_data : IN PARAMETER DataView::RawData {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_image;
+
+SUBPROGRAM IMPLEMENTATION PI_image.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_image.others;
+
+SUBPROGRAM PI_a
+FEATURES
+  vara : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_a;
+
+SUBPROGRAM IMPLEMENTATION PI_a.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_a.others;
+
+SUBPROGRAM PI_c
+FEATURES
+  varc : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_c;
+
+SUBPROGRAM IMPLEMENTATION PI_c.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_c.others;
+
+SUBPROGRAM PI_e
+FEATURES
+  vare : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_e;
+
+SUBPROGRAM IMPLEMENTATION PI_e.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_e.others;
+
+SUBPROGRAM PI_g
+FEATURES
+  varg : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_g;
+
+SUBPROGRAM IMPLEMENTATION PI_g.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_g.others;
+
+SUBPROGRAM PI_i
+FEATURES
+  vari : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_i;
+
+SUBPROGRAM IMPLEMENTATION PI_i.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_i.others;
+
+SUBPROGRAM PI_k
+FEATURES
+  vark : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_k;
+
+SUBPROGRAM IMPLEMENTATION PI_k.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_k.others;
+
+SUBPROGRAM PI_m
+FEATURES
+  varm : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_m;
+
+SUBPROGRAM IMPLEMENTATION PI_m.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_m.others;
+
+SUBPROGRAM PI_o
+FEATURES
+  varo : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_o;
+
+SUBPROGRAM IMPLEMENTATION PI_o.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_o.others;
+
+SUBPROGRAM PI_q
+FEATURES
+  varq : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_q;
+
+SUBPROGRAM IMPLEMENTATION PI_q.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_q.others;
+
+SUBPROGRAM PI_s
+FEATURES
+  vars : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_s;
+
+SUBPROGRAM IMPLEMENTATION PI_s.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_s.others;
+
+SUBPROGRAM PI_u
+FEATURES
+  varu : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_u;
+
+SUBPROGRAM IMPLEMENTATION PI_u.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_u.others;
+
+SUBPROGRAM PI_w
+FEATURES
+  varw : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_w;
+
+SUBPROGRAM IMPLEMENTATION PI_w.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_w.others;
+
+SUBPROGRAM PI_y
+FEATURES
+  vary : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_y;
+
+SUBPROGRAM IMPLEMENTATION PI_y.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_y.others;
+
+SUBPROGRAM RI_testint
+FEATURES
+  int2 : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_testint;
+
+SUBPROGRAM IMPLEMENTATION RI_testint.others
+END RI_testint.others;
+
+SUBPROGRAM RI_b
+FEATURES
+  varb : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_b;
+
+SUBPROGRAM IMPLEMENTATION RI_b.others
+END RI_b.others;
+
+SUBPROGRAM RI_d
+FEATURES
+  vard : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_d;
+
+SUBPROGRAM IMPLEMENTATION RI_d.others
+END RI_d.others;
+
+SUBPROGRAM RI_j
+FEATURES
+  j : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_j;
+
+SUBPROGRAM IMPLEMENTATION RI_j.others
+END RI_j.others;
+
+SUBPROGRAM RI_f
+FEATURES
+  varf : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_f;
+
+SUBPROGRAM IMPLEMENTATION RI_f.others
+END RI_f.others;
+
+SUBPROGRAM RI_h
+FEATURES
+  varh : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_h;
+
+SUBPROGRAM IMPLEMENTATION RI_h.others
+END RI_h.others;
+
+SUBPROGRAM RI_l
+FEATURES
+  varl : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_l;
+
+SUBPROGRAM IMPLEMENTATION RI_l.others
+END RI_l.others;
+
+SUBPROGRAM RI_n
+FEATURES
+  varn : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_n;
+
+SUBPROGRAM IMPLEMENTATION RI_n.others
+END RI_n.others;
+
+SUBPROGRAM RI_p
+FEATURES
+  varp : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_p;
+
+SUBPROGRAM IMPLEMENTATION RI_p.others
+END RI_p.others;
+
+SUBPROGRAM RI_r
+FEATURES
+  varr : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_r;
+
+SUBPROGRAM IMPLEMENTATION RI_r.others
+END RI_r.others;
+
+SUBPROGRAM RI_t
+FEATURES
+  vart : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_t;
+
+SUBPROGRAM IMPLEMENTATION RI_t.others
+END RI_t.others;
+
+SUBPROGRAM RI_v
+FEATURES
+  varv : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_v;
+
+SUBPROGRAM IMPLEMENTATION RI_v.others
+END RI_v.others;
+
+SUBPROGRAM RI_x
+FEATURES
+  varx : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_x;
+
+SUBPROGRAM IMPLEMENTATION RI_x.others
+END RI_x.others;
+
+SUBPROGRAM RI_z
+FEATURES
+  varz : IN PARAMETER DataView::MyInteger {
+    Taste::encoding => NATIVE;
+  };
+END RI_z;
+
+SUBPROGRAM IMPLEMENTATION RI_z.others
+END RI_z.others;
+
+SYSTEM receiver
+FEATURES
+  PI_image : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_image.others {
+    Taste::coordinates => "150827 10536";
+    Taste::RCMoperationKind => sporadic;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "image";
+  };
+  PI_a : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_a.others {
+    Taste::coordinates => "150827 28576";
+    Taste::RCMoperationKind => sporadic;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "a";
+  };
+  PI_c : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_c.others {
+    Taste::coordinates => "150827 43008";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "c";
+  };
+  PI_e : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_e.others {
+    Taste::coordinates => "150827 57675";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "e";
+  };
+  PI_g : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_g.others {
+    Taste::coordinates => "150827 74840";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "g";
+  };
+  PI_i : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_i.others {
+    Taste::coordinates => "150827 84614";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "i";
+  };
+  PI_k : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_k.others {
+    Taste::coordinates => "150827 93912";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "k";
+  };
+  PI_m : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_m.others {
+    Taste::coordinates => "150827 108677";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "m";
+  };
+  PI_o : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_o.others {
+    Taste::coordinates => "150827 120303";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "o";
+  };
+  PI_q : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_q.others {
+    Taste::coordinates => "150827 130475";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "q";
+  };
+  PI_s : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_s.others {
+    Taste::coordinates => "150827 148640";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "s";
+  };
+  PI_u : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_u.others {
+    Taste::coordinates => "150827 159539";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "u";
+  };
+  PI_w : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_w.others {
+    Taste::coordinates => "150827 170075";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "w";
+  };
+  PI_y : PROVIDES SUBPROGRAM ACCESS interfaceview::IV::receiver::PI_y.others {
+    Taste::coordinates => "150827 177846";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "y";
+  };
+  RI_testint : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_testint.others {
+    Taste::coordinates => "150827 19556";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "testint";
+    Taste::labelInheritance => "true";
+  };
+  RI_b : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_b.others {
+    Taste::coordinates => "150827 33988";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "b";
+    Taste::labelInheritance => "true";
+  };
+  RI_d : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_d.others {
+    Taste::coordinates => "150827 46616";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "d";
+    Taste::labelInheritance => "true";
+  };
+  RI_j : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_j.others {
+    Taste::coordinates => "150827 89144";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "j";
+    Taste::labelInheritance => "true";
+  };
+  RI_f : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_f.others {
+    Taste::coordinates => "150827 67688";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "f";
+    Taste::labelInheritance => "true";
+  };
+  RI_h : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_h.others {
+    Taste::coordinates => "150827 79608";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "h";
+    Taste::labelInheritance => "true";
+  };
+  RI_l : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_l.others {
+    Taste::coordinates => "150827 101064";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "l";
+    Taste::labelInheritance => "true";
+  };
+  RI_n : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_n.others {
+    Taste::coordinates => "150827 112310";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "n";
+    Taste::labelInheritance => "true";
+  };
+  RI_p : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_p.others {
+    Taste::coordinates => "150827 126842";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "p";
+    Taste::labelInheritance => "true";
+  };
+  RI_r : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_r.others {
+    Taste::coordinates => "150827 137741";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "r";
+    Taste::labelInheritance => "true";
+  };
+  RI_t : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_t.others {
+    Taste::coordinates => "150827 152273";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "t";
+    Taste::labelInheritance => "true";
+  };
+  RI_v : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_v.others {
+    Taste::coordinates => "150827 163172";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "v";
+    Taste::labelInheritance => "true";
+  };
+  RI_x : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_x.others {
+    Taste::coordinates => "150827 174071";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "x";
+    Taste::labelInheritance => "true";
+  };
+  RI_z : REQUIRES SUBPROGRAM ACCESS interfaceview::IV::sender::PI_z.others {
+    Taste::coordinates => "150827 181410.5";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "z";
+    Taste::labelInheritance => "true";
+  };
+PROPERTIES
+  Source_Language => (C);
+  Taste::Active_Interfaces => any;
+END receiver;
+
+SYSTEM IMPLEMENTATION receiver.others
+END receiver.others;
+
+END interfaceview::IV::receiver;
+
+PACKAGE interfaceview::IV
+PUBLIC
+
+WITH interfaceview::IV::sender;
+WITH interfaceview::IV::receiver;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SYSTEM interfaceview
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+END interfaceview;
+
+SYSTEM IMPLEMENTATION interfaceview.others
+SUBCOMPONENTS
+  sender : SYSTEM interfaceview::IV::sender::sender.others {
+    Taste::coordinates => "73619 3500 114759 183955";
+  };
+  receiver : SYSTEM interfaceview::IV::receiver::receiver.others {
+    Taste::coordinates => "150827 3320 207484 185045";
+  };
+CONNECTIONS
+  receiver_RI_testint_sender_PI_testint : SUBPROGRAM ACCESS sender.PI_testint -> receiver.RI_testint {
+    Taste::coordinates => "150827 19556 145252 19556 145252 21540 114759 21540";
+  };
+  receiver_RI_b_sender_PI_b : SUBPROGRAM ACCESS sender.PI_b -> receiver.RI_b {
+    Taste::coordinates => "150827 33988 145252 33988 145252 35972 114759 35972";
+  };
+  receiver_RI_d_sender_PI_d : SUBPROGRAM ACCESS sender.PI_d -> receiver.RI_d {
+    Taste::coordinates => "150827 46616 145252 46616 145252 50404 114759 50404";
+  };
+  receiver_RI_f_sender_PI_f : SUBPROGRAM ACCESS sender.PI_f -> receiver.RI_f {
+    Taste::coordinates => "150827 67688 145252 67688 145252 67709 114759 67709";
+  };
+  receiver_RI_h_sender_PI_h : SUBPROGRAM ACCESS sender.PI_h -> receiver.RI_h {
+    Taste::coordinates => "150827 79608 145252 79608 145252 79788 114759 79788";
+  };
+  receiver_RI_j_sender_PI_j : SUBPROGRAM ACCESS sender.PI_j -> receiver.RI_j {
+    Taste::coordinates => "150827 89144 145252 89144 145252 89324 114759 89324";
+  };
+  receiver_RI_l_sender_PI_l : SUBPROGRAM ACCESS sender.PI_l -> receiver.RI_l {
+    Taste::coordinates => "150827 101064 145252 101064 145252 101244 114759 101244";
+  };
+  receiver_RI_n_sender_PI_n : SUBPROGRAM ACCESS sender.PI_n -> receiver.RI_n {
+    Taste::coordinates => "150827 112310 132793 112310 132793 111763 114759 111763";
+  };
+  receiver_RI_p_sender_PI_p : SUBPROGRAM ACCESS sender.PI_p -> receiver.RI_p {
+    Taste::coordinates => "150827 126842 132793 126842 132793 125569 114759 125569";
+  };
+  receiver_RI_r_sender_PI_r : SUBPROGRAM ACCESS sender.PI_r -> receiver.RI_r {
+    Taste::coordinates => "150827 137741 132793 137741 132793 137558 114759 137558";
+  };
+  receiver_RI_t_sender_PI_t : SUBPROGRAM ACCESS sender.PI_t -> receiver.RI_t {
+    Taste::coordinates => "150827 152273 132793 152273 132793 153543 114759 153543";
+  };
+  receiver_RI_v_sender_PI_v : SUBPROGRAM ACCESS sender.PI_v -> receiver.RI_v {
+    Taste::coordinates => "150827 163172 132793 163172 132793 163352 114759 163352";
+  };
+  receiver_RI_x_sender_PI_x : SUBPROGRAM ACCESS sender.PI_x -> receiver.RI_x {
+    Taste::coordinates => "150827 174071 132793 174071 132793 174251 114759 174251";
+  };
+  receiver_RI_z_sender_PI_z : SUBPROGRAM ACCESS sender.PI_z -> receiver.RI_z {
+    Taste::coordinates => "150827 181410.5 132793 181410.5 132793 180232 114759 180232";
+  };
+  sender_RI_image_receiver_PI_image : SUBPROGRAM ACCESS receiver.PI_image -> sender.RI_image {
+    Taste::coordinates => "114759 8912 145252 8912 145252 10536 150827 10536";
+  };
+  sender_RI_a_receiver_PI_a : SUBPROGRAM ACCESS receiver.PI_a -> sender.RI_a {
+    Taste::coordinates => "114759 28756 145252 28756 145252 28576 150827 28576";
+  };
+  sender_RI_c_receiver_PI_c : SUBPROGRAM ACCESS receiver.PI_c -> sender.RI_c {
+    Taste::coordinates => "114759 43188 145252 43188 145252 43008 150827 43008";
+  };
+  sender_RI_e_receiver_PI_e : SUBPROGRAM ACCESS receiver.PI_e -> sender.RI_e {
+    Taste::coordinates => "114759 58332 145252 58332 145252 57675 150827 57675";
+  };
+  sender_RI_i_receiver_PI_i : SUBPROGRAM ACCESS receiver.PI_i -> sender.RI_i {
+    Taste::coordinates => "114759 85986 145252 85986 145252 84614 150827 84614";
+  };
+  sender_RI_g_receiver_PI_g : SUBPROGRAM ACCESS receiver.PI_g -> sender.RI_g {
+    Taste::coordinates => "114759 72636 145252 72636 145252 74840 150827 74840";
+  };
+  sender_RI_k_receiver_PI_k : SUBPROGRAM ACCESS receiver.PI_k -> sender.RI_k {
+    Taste::coordinates => "114759 94092 145252 94092 145252 93912 150827 93912";
+  };
+  sender_RI_m_receiver_PI_m : SUBPROGRAM ACCESS receiver.PI_m -> sender.RI_m {
+    Taste::coordinates => "114759 105224 132793 105224 132793 108677 150827 108677";
+  };
+  sender_RI_o_receiver_PI_o : SUBPROGRAM ACCESS receiver.PI_o -> sender.RI_o {
+    Taste::coordinates => "114759 116123 132793 116123 132793 120303 150827 120303";
+  };
+  sender_RI_q_receiver_PI_q : SUBPROGRAM ACCESS receiver.PI_q -> sender.RI_q {
+    Taste::coordinates => "114759 130655 132793 130655 132793 130475 150827 130475";
+  };
+  sender_RI_s_receiver_PI_s : SUBPROGRAM ACCESS receiver.PI_s -> sender.RI_s {
+    Taste::coordinates => "114759 141554 132793 141554 132793 148640 150827 148640";
+  };
+  sender_RI_u_receiver_PI_u : SUBPROGRAM ACCESS receiver.PI_u -> sender.RI_u {
+    Taste::coordinates => "114759 158629 132793 158629 132793 159539 150827 159539";
+  };
+  sender_RI_w_receiver_PI_w : SUBPROGRAM ACCESS receiver.PI_w -> sender.RI_w {
+    Taste::coordinates => "114759 166985 132793 166985 132793 170075 150827 170075";
+  };
+  sender_RI_y_receiver_PI_y : SUBPROGRAM ACCESS receiver.PI_y -> sender.RI_y {
+    Taste::coordinates => "114759 177884 132793 177884 132793 177846 150827 177846";
+  };
+END interfaceview.others;
+
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+  Taste::coordinates => "0 0 297000 210000";
+  Taste::version => "2.4";
+END interfaceview::IV;
+

@@ -1,5 +1,0 @@
-[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/src/sender.c:[m[K In function '[01m[Ksender_PI_testint[m[K':
-[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_2int/work/sender/C/src/sender.c:39:32:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K%d[m[K' expects argument of type '[01m[Kint[m[K', but argument 2 has type '[01m[Kasn1SccMyInteger {aka const long long unsigned int}[m[K' [[01;35m[K-Wformat=[m[K]
-         printf("WRONG VALUES: [01;35m[K%d[m[K", [32m[K*IN_int2[m[K);
-                               [01;35m[K~^[m[K   [32m[K~~~~~~~~[m[K
-                               [32m[K%lld[m[K

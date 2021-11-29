@@ -1,0 +1,36 @@
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kpro_receiver_a[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:87:51:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern process_package__taste_protected_object [01;35m[Kreceiver_protected[m[K;
+                                                   [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kpro_receiver_image[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:99:51:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern process_package__taste_protected_object [01;35m[Kreceiver_protected[m[K;
+                                                   [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kpro_sender_b[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:219:51:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern process_package__taste_protected_object [01;35m[Ksender_protected[m[K;
+                                                   [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kpro_sender_testint[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:231:51:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+    extern process_package__taste_protected_object [01;35m[Ksender_protected[m[K;
+                                                   [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kcall_receiver_a[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:246:52:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+     extern process_package__taste_protected_object [01;35m[Kreceiver_protected[m[K;
+                                                    [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kcall_receiver_image[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:258:52:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Kreceiver_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+     extern process_package__taste_protected_object [01;35m[Kreceiver_protected[m[K;
+                                                    [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kcall_sender_b[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:270:52:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+     extern process_package__taste_protected_object [01;35m[Ksender_protected[m[K;
+                                                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kcall_sender_testint[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:282:52:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+     extern process_package__taste_protected_object [01;35m[Ksender_protected[m[K;
+                                                    [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:[m[K In function '[01m[Kcall_sender_trigger[m[K':
+[01m[K/home/taste/projects/largedatataste/img_transfer_gr740_4spo/work/build/node1/gr740_partition/gr740_partition_polyorb_interface.c:294:52:[m[K [01;35m[Kwarning: [m[Knested extern declaration of '[01m[Ksender_protected[m[K' [[01;35m[K-Wnested-externs[m[K]
+     extern process_package__taste_protected_object [01;35m[Ksender_protected[m[K;
+                                                    [01;35m[K^~~~~~~~~~~~~~~~[m[K

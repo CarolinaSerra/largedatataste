@@ -23,10 +23,8 @@ void sender_RI_image
          innerMsc = (NULL != getenv("TASTE_INNER_MSC"))?1:0;
       if (1 == innerMsc) {
          long long msc_time = getTimeInMilliseconds();
-         // PrintASN1RawData ("INNERDATA: image::RawData::img_data", IN_img_data);
-         // puts("");
          // Log message to receiver (corresponding PI: image)
-         printf ("INNER_RI: sender,receiver,image,%lld\n", msc_time);
+         printf ("INNER_RI: sender,receiver,image,image,%lld\n", msc_time);
          fflush(stdout);
       }
    #endif

@@ -216,6 +216,7 @@ objpool_request_t *objpool_request_t_create(
   }
   __po_hi_mutex_init(&((P->lock)), __PO_HI_MUTEX_REGULAR, 0);
   P->items = calloc(num, sizeof(objpool_item_t));
+  printf("\nsize = %d, num = %d\n", sizeof(objpool_item_t), num);
   P->count = 0;
   if (P->items == NULL)
   {
@@ -272,6 +273,7 @@ void objpool_request_t_is_request_valid(
   {
     if (Iter == I)
     {
+      __po_hi_mutex_unlock(&(P->lock));
       __PO_HI_ASSERT(Iter == I, "invalid_request %p\n", I);
     }
     else
@@ -304,7 +306,7 @@ bool objpool_request_t_free(
   {
     if (Iter == I)
     {
-      __PO_HI_DEBUG_CRITICAL ("[PO-HI/C] double free %p\n", I);
+      __PO_HI_DEBUG_INFO ("[PO-HI/C] double free %p\n", I);
       __po_hi_mutex_unlock(&(P->lock)); 
       return true;
     }
@@ -367,7 +369,6 @@ void __po_hi_gqueue_init(
     __po_hi_port_id_t empties[],
     __po_hi_uint32_t total_fifo_size)
 {
-
   __PO_HI_DEBUG_DEBUG("Initialize task #%d\n", id);
   __PO_HI_DEBUG_DEBUG(" - ports : %d\n", nb_ports);
   for (int j = 0; j < nb_ports; j++)
@@ -430,7 +431,7 @@ void __po_hi_gqueue_init(
       __po_hi_gqueues_port_is_empty[id][tmp] = 1;
     }
 
-    /* Set invalid all recent values 
+    /* Set invalid all recent values
        __po_hi_request_t* request = (__po_hi_request_t*)&__po_hi_gqueues_most_recent_values[id][tmp];
        request->port = __PO_HI_GQUEUE_INVALID_PORT; */
   }
@@ -1008,7 +1009,8 @@ int __po_hi_gqueue_next_value(
                       __po_hi_gqueues_sizes[id][port], __po_hi_gqueues_total_fifo_size[id],
                       __po_hi_gqueues[id]);
 
-// XXXX is this sufficient to remove data, wait and see ;-)
+  // XXXX is this sufficient to remove data, wait and see ;-)
+
   *(__po_hi_gqueues[id] + __po_hi_gqueues_first[id][port] +
       __po_hi_gqueues_offsets[id][port]) = NULL;
 
